@@ -1,11 +1,11 @@
-title: Hexo
+title: NeeleX
 subtitle: ''
 description: ''
 keywords: null
-author: John Doe
+author: Neel Basu (Sunanda Bose)
 language: en
 timezone: ''
-url: 'http://example.com'
+url: 'http://neel.github.io'
 root: /
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
@@ -29,7 +29,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
