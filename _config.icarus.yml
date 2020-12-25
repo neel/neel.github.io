@@ -100,7 +100,6 @@ head:
 navbar:
     # Navigation menu items
     menu:
-        Home: /
         Publications: /publications
         Archives: /archives
         Categories: /categories
