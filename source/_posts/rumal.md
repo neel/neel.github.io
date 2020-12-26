@@ -3,6 +3,10 @@ title: Rumal (রুমাল) is a header only XML/HTML/SVG/CSS/Javascript Gene
 date: 2019-12-26 22:45:26
 tags: 
     - C++
+    - XML
+    - HTML
+    - CSS
+    - Javascript
 categories:
     - Announcement
 ---
@@ -12,7 +16,7 @@ Currently it uses `std::string` which is supposed to be replaced with compile ti
 This will make it usable as a template engine.
 
 
-```
+```c++
 std::cout << 
     div(_id(42) / _class("test"),
         span(_id(43) / _class("test"), "Hello"),
@@ -23,7 +27,7 @@ std::cout <<
 
 The above code prints 
 
-```
+```html
 <div id="42" class="test">
     <span id="43" class="test"> Hello </span>
     World
@@ -32,7 +36,7 @@ The above code prints
 
 Rumal can be used to generate CSS too.
 
-```
+```c++
 select(".main", 
       display("block") 
     / position("relative"), 
@@ -48,7 +52,7 @@ select(".main",
 
 With the above C++ code the following CSS is generated
 
-```
+```css
 .container{
     position: relative; 
     display: block;
@@ -69,7 +73,7 @@ Rumal can also be used as a kind of Quine (self replicating program) that genera
 
 > However the Javascript generation part is incomplete and buggy. I am not getting enough time to complete / fix it. Use at your own risk
 
-```
+```c++
 assignable<Node> document("document");
 assignable<Node> y("y");
 auto script = jQuery(document).ready(function()[
@@ -82,11 +86,11 @@ auto script = jQuery(document).ready(function()[
 
 The above generates a similar javascript code.
 
-```
+```javascript
 jQuery(document).ready(function()[
-        jQuery(".hallo").click(function(){
-            jQuery(y).hide(),
-            jQuery(".hello").hide()
-        })
-    ]);
+    jQuery(".hallo").click(function(){
+        jQuery(y).hide(),
+        jQuery(".hello").hide()
+    })
+});
 ```

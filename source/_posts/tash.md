@@ -9,9 +9,9 @@ categories:
     - Announcement
 ---
 
-I am working on [Tash](https://gitlab.com/neel.basu/tash) which is a small Open Source C++ library for ArangoDB Database which includes APIs for HTTP based document access and a query builder for AQL (Arango Query Language). These are a few example usages.
+I am working on [Tash](https://gitlab.com/neel.basu/tash) (ট্যাঁশ) which is an Open Source C++ library for ArangoDB Database which includes APIs for HTTP based document access and a query builder for AQL (Arango Query Language). These are a few example usages.
 
-```
+```c++
 std::string name = "Hijibijbij";
 tash::shell shell("school"); 
 shell <<  select("s").in("students")  
@@ -27,7 +27,7 @@ The above generates an equivalent AQL and execute it over the arangodb connectio
 
 <!--more-->
 
-```
+```aql
 FOR s IN students
     FILTER s.name == "Hijibijbij" AND s.fathers_name == "Hijibijbij"
     SORT s._key ASC 
@@ -36,7 +36,7 @@ FOR s IN students
 
 Along with AQL generation it also performs normal HTTP API based document access.
 
-```
+```c++
 tash::vertex students(school, "students");
 if(students.exists() == boost::beast::http::status::not_found){
     students.create();
