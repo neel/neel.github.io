@@ -5,6 +5,8 @@ tags:
     - C++
     - ArangoDB
     - Graph Database
+categories:
+    - Announcement
 ---
 
 I am working on [Tash](https://gitlab.com/neel.basu/tash) which is a small Open Source C++ library for ArangoDB Database which includes APIs for HTTP based document access and a query builder for AQL (Arango Query Language). These are a few example usages.

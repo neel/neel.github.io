@@ -4,6 +4,8 @@ date: 2018-09-23 17:07:02
 tags: 
     - Mathematica 
     - C++
+categories:
+    - Announcement
 ---
 
 ```C++
