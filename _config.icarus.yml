@@ -275,8 +275,10 @@ widgets:
         type: links
         # Names and URLs of the sites
         links:
-            Hexo: 'https://hexo.io'
-            Bulma: 'https://bulma.io'
+            Mathematica++: 'https://gitlab.com/neel.basu/mathematicapp'
+            Tash: 'https://gitlab.com/neel.basu/tash'
+            Rumal: 'https://gitlab.com/neel.basu/rumal'
+            Udho: 'https://gitlab.com/neel.basu/udho'
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
