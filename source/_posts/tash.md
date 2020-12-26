@@ -1,5 +1,5 @@
 ---
-title: Tash an Open Source C++ library for ArangoDB and AQL
+title: Tash (ট্যাঁশ) an Open Source C++ library for ArangoDB and AQL
 date: 2019-09-19 17:16:43
 tags: 
     - C++
@@ -9,7 +9,7 @@ categories:
     - Announcement
 ---
 
-I am working on [Tash](https://gitlab.com/neel.basu/tash) (ট্যাঁশ) which is an Open Source C++ library for ArangoDB Database which includes APIs for HTTP based document access and a query builder for AQL (Arango Query Language). These are a few example usages.
+I am working on [Tash](https://gitlab.com/neel.basu/tash) which is an Open Source C++ library for ArangoDB Database which includes APIs for HTTP based document access and a query builder for AQL (Arango Query Language). These are a few example usages.
 
 ```c++
 std::string name = "Hijibijbij";
