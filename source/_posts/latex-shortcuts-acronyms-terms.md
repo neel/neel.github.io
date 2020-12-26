@@ -11,7 +11,7 @@ categories:
 
 I often need to check for inconsistent capitalization in my tex files. So listing all the consecutive capitalized words and characters helps me to decide which one is intentional capitalization and which one is not. The following bash script has two functions can lists all terms (Capitalized Phrase) and acronyms used throughout the input file.
 
-```
+```bash
 $ terms filename.tex 
      19 Cloud Station
       9 Sensor Gateway
@@ -28,7 +28,7 @@ $ acronyms filename.tex
 
 To reuse save the code shown at the end as `$HOME/shortcuts.sh` then issue command `source $HOME/shortcuts.sh`. use `terms` and `acronyms` functions as shown below. And here is the `shortcuts.sh`.
 
-```
+```bash
 #!/bin/bash
 # source shortcuts.sh
 # terms filename.tex
