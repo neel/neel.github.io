@@ -21,8 +21,9 @@ shell <<  select("s").in("students")
 nlohmann::json result;
 shell >> result;
 ```
-
 The above generates an equivalent AQL and execute it over the arangodb connection
+
+![tashgoru](/images/tash-goru.png "ট্যাঁশগরু সুকুমার রায়")
 
 <!--more-->
 
@@ -49,8 +50,6 @@ boost::beast::http::status status = students.add(document);
 nlohmann::json hijibijbij = students.by_key(document["_key"].get<std::string>());
 ```
 Unlike Fuerte it does not require velocypack or node. Instead it uses nlohmann::json and Boost.Beast libraries
-
-![tashgoru](/images/tash-goru.png "ট্যাঁশগরু সুকুমার রায়")
 
 ## Building
 
