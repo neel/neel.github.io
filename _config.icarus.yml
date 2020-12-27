@@ -100,11 +100,11 @@ head:
 navbar:
     # Navigation menu items
     menu:
+        About: /about
         Publications: /publications
         Archives: /archives
         Categories: /categories
         Tags: /tags
-        About: /about
     # Links to be shown on the right of the navigation bar
     links:
         GitHub:
