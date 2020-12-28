@@ -1,16 +1,16 @@
----
-title: Rumal (রুমাল) is a header only XML/HTML/SVG/CSS/Javascript Generator C++ library
-date: 2019-12-26 22:45:26
-tags: 
-    - C++
-    - XML
-    - HTML
-    - CSS
-    - Javascript
+title: >-
+  Rumal (রুমাল) is a header only XML/HTML/SVG/CSS/Javascript Generator C++
+  library
+tags:
+  - C++
+  - XML
+  - HTML
+  - CSS
+  - Javascript
 categories:
-    - Announcement
+  - Announcement
+date: 2019-12-26 22:45:26
 ---
-
 Rumal is a C++ library that can generate HTML/CSS/Javascript code from significantly identical C++ syntax. 
 Currently it uses `std::string` which is supposed to be replaced with compile time strings. Injecting placeholders, is also planned but not yet implemented.
 This will make it usable as a template engine.
@@ -245,4 +245,4 @@ std::cout << (
     ) << std::endl;
 ```
 
-[Gitlab Repo](https://gitlab.com/neel.basu/rumal)
+[Gitlab](https://gitlab.com/neel.basu/rumal)
