@@ -1,5 +1,4 @@
-title: 
-  Rumal a header only HTML/CSS/Javascript Generator C++ library
+title: Rumal a header only HTML/CSS/Javascript Generator C++ library
 tags:
   - C++
   - XML
