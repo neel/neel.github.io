@@ -1,6 +1,5 @@
-title: >-
-  Rumal (রুমাল) is a header only XML/HTML/SVG/CSS/Javascript Generator C++
-  library
+title: 
+  Rumal a header only HTML/CSS/Javascript Generator C++ library
 tags:
   - C++
   - XML

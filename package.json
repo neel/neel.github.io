@@ -26,8 +26,10 @@
     "hexo-renderer-marked": "^3.0.0",
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
+    "hexo-sliding-spoiler": "^1.2.1",
     "hexo-tag-link-preview": "^1.2.4",
     "hexo-theme-icarus": "^4.1.1",
-    "hexo-theme-landscape": "^0.0.3"
+    "hexo-theme-landscape": "^0.0.3",
+    "puppeteer": "^5.5.0"
   }
 }
