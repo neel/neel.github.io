@@ -12,6 +12,7 @@
     "version": "5.3.0"
   },
   "dependencies": {
+    "@heowc/hexo-tag-gdemo": "^0.14.0",
     "bulma-stylus": "^0.8.0",
     "hexo": "^5.0.0",
     "hexo-admin": "^2.3.0",
