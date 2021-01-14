@@ -8,6 +8,11 @@ ___
 
 ## Highlighted Publications
 
+> <svg width="10" height="10"> <rect width="10" height="10" style="fill:rgb(191,68,68);" /> </svg> [Predicting Spatio-Temporal Phenomena of Mobile Resources in Sensor Cloud Infrastructure](http://dx.doi.org/10.1145/3446936)
+Sunanda Bose, Sumit Kumar Paul, Nandini Mukherjee
+*ACM Transactions on Spatial Algorithms and Systems* 
+ACM 2021
+
 > <svg width="10" height="10"> <rect width="10" height="10" style="fill:rgb(1,153,255);" /> </svg> [SensIaaS: A sensor-cloud infrastructure with sensor virtualization](https://ieeexplore.ieee.org/abstract/document/7545924/)
 Sunanda Bose, Nandini Mukherjee
 *2016 IEEE 3rd International Conference on Cyber Security and Cloud Computing (CSCloud)* 
@@ -34,6 +39,11 @@ Sunanda Bose, Nandini Mukherjee
 Innsbruck, Austria, IEEE 2016
 
 ## All Publications
+
+> <svg width="10" height="10"> <rect width="10" height="10" style="fill:rgb(191,68,68);" /> </svg> [Predicting Spatio-Temporal Phenomena of Mobile Resources in Sensor Cloud Infrastructure](http://dx.doi.org/10.1145/3446936)
+Sunanda Bose, Sumit Kumar Paul, Nandini Mukherjee
+*ACM Transactions on Spatial Algorithms and Systems* 
+ACM 2021
 
 > <svg width="10" height="10"> <rect width="10" height="10" style="fill:rgb(75,165,80);" /> </svg> [A Framework for Delivering IoT Services with Virtual Sensors: Case Study Remote Healthcare Delivery](http://scholar.google.com/scholar?cluster=701565519499848840&hl=en&oi=scholarr)
 Nandini Mukherjee, Sunanda Bose, Himadri Sekhar Ray
