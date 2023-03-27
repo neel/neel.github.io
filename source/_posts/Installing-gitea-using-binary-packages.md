@@ -195,3 +195,92 @@ Now visit `http://woodpecker.YOUR_DOMAIN.com`. it should redirect you to `http:/
 > # set +o allexport
 > # /usr/local/bin/woodpecker-server
 > ```
+
+
+Now if the woodpecker server is working then we can proceed further.
+We need to change the gitea port because `woodpecker-agent` listens to 3000 which will already be in use by gitea.
+So, open `/etc/gitea/app.ini` and change the `HTTP_PORT` to `4000`.
+Open the nginx configuration file `/etc/nginx/sites-enabled/gitea.conf` and change `3000` to `4000`.
+Now restart both services and check whether everything is working by opening `git.YOUR_DOMAIN.com`.
+```
+$ sudo systemctl restart gitea
+$ sudo systemctl restart nginx
+```
+Install `docker` if you don't have it installed already.
+
+```
+sudo apt-get install docker docker-compose
+```
+
+Generate a secret using `openssl rand -hex 32` and copy that generated secret into `/etc/woodpecker.conf` as shown below.
+```
+...
+WOODPECKER_AGENT_SECRET=COPIED_SECRET
+```
+
+Then save the following file as `/etc/systemd/system/woodpecker-agent.service`
+```
+[Unit]
+Description=Woodpecker
+Documentation=https://woodpecker-ci.org/docs/intro
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+User=woodpecker
+Group=woodpecker
+EnvironmentFile=/etc/woodpecker-agent.conf
+ExecStart=/usr/local/bin/woodpecker-agent
+RestartSec=5
+Restart=on-failure
+SyslogIdentifier=woodpecker-agent
+WorkingDirectory=/var/lib/woodpecker
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Following is the configuration file `/etc/woodpecker-agent.conf`
+
+```
+WOODPECKER_SERVER=localhost:9000
+WOODPECKER_BACKEND=docker
+WOODPECKER_AGENT_SECRET=COPIED_SECRET
+```
+
+Now start the `woodpecker-agent` service and check it's status
+
+```
+$ sudo systemctl start woodpecker-agent
+$ sudo systemctl status woodpecker-agent
+```
+
+For my case I got some errors
+
+```
+Mar 27 15:39:01 git systemd[1]: Started Woodpecker.
+Mar 27 15:39:01 git woodpecker-agent[19259]: {"level":"error","error":"rpc error: code = Unknown desc = invalid agent token","time":"2023-03-27T15:39:01Z","message":"grpc error: done(): code: Unk>
+Mar 27 15:39:01 git woodpecker-agent[19259]: {"level":"error","error":"rpc error: code = Unknown desc = invalid agent token","time":"2023-03-27T15:39:01Z","message":"pipeline done with error"}
+Mar 27 15:39:01 git systemd[1]: woodpecker-agent.service: Deactivated successfully.
+```
+
+Which implies that the `woodpecker-server` needs to be restarted. So restart that and restart `woodpecker-agent` too. Now it should be running.
+
+```
+$ sudo systemctl restart woodpecker
+$ sudo systemctl restart woodpecker-agent
+$ sudo systemctl status woodpecker-agent
+● woodpecker-agent.service - Woodpecker
+     Loaded: loaded (/etc/systemd/system/woodpecker-agent.service; disabled; vendor preset: enabled)
+     Active: active (running) since Mon 2023-03-27 15:41:01 UTC; 2s ago
+       Docs: https://woodpecker-ci.org/docs/intro
+   Main PID: 19344 (woodpecker-agen)
+      Tasks: 8 (limit: 4660)
+     Memory: 3.6M
+        CPU: 21ms
+     CGroup: /system.slice/woodpecker-agent.service
+             └─19344 /usr/local/bin/woodpecker-agent
+
+Mar 27 15:41:01 git systemd[1]: Started Woodpecker.
+```
+
