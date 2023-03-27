@@ -176,14 +176,15 @@ WOODPECKER_GITEA_SECRET=COPIED_SECRET
 WOODPECKER_GITEA_SKIP_VERIFY=true
 WOODPECKER_DATABASE_DRIVER=postgres
 WOODPECKER_DATABASE_DATASOURCE=postgres://woodpecker:password@127.0.0.1:5432/woodpecker?sslmode=disable
+GODEBUG=netdns=go
 ```
-Start woodpecker service
+The last environment variable is added because there is a bug and that seting that seems to be an [workaround](https://github.com/woodpecker-ci/woodpecker/issues/1497#issuecomment-1364312746). Start woodpecker service.
 
 ```shell
 $ sudo systemctl start woodpecker
 ```
 
-Now visit `http://woodpecker.YOUR_DOMAIN.com`. it should redirect you to `http://git.YOUR_DOMAIN.com` for authentication. Ideally it should be done by now. But the problem is it will crash due to this issue (https://github.com/woodpecker-ci/woodpecker/issues/1576). The workaround is to change `WOODPECKER_GITEA_URL` to `http://woodpecker.YOUR_DOMAIN.com:3000`. For some reason, woodpecker server crashes when gitea is behind nginx proxy.
+Now visit `http://woodpecker.YOUR_DOMAIN.com`. it should redirect you to `http://git.YOUR_DOMAIN.com` for authentication. Ideally it should be done by now. But the problem is it will crash due to this [issue](https://github.com/woodpecker-ci/woodpecker/issues/1576). The workaround is to change `WOODPECKER_GITEA_URL` to `http://woodpecker.YOUR_DOMAIN.com:3000`. For some reason, woodpecker server crashes when gitea is behind nginx proxy.
 
 > If woodpecker crashes then do the following to get the backtrace
 >
