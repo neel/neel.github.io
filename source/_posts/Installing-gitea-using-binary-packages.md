@@ -304,3 +304,5 @@ $ sudo apt-get install certbot python3-certbot-nginx
 $ sudo certbot --nginx
 $ sudo systemctl restart nginx
 ```
+
+Open `/etc/gitea/app.ini` and update `ROOT_URL=https://git.YOUR_DOMAIN.com/` then restart `gitea` service. Open `/etc/woodpecker.conf` and update `WOODPECKER_HOST` and `WOODPECKER_GITEA_URL` with https urls. Restart `woodpecker` service. Visit `http://git.YOUR_DOMAIN.com/admin/applications` again and update the Redirect URL with https.
