@@ -9,6 +9,7 @@ date: 2023-03-26 17:53:00
 ```shell
 $ sudo adduser --system --shell /bin/bash --gecos 'Git Version Control' --group --disabled-password --home /home/git git
 $ sudo adduser --system --shell /bin/bash --gecos 'Woodpecker CI' --group --disabled-password --home /home/woodpecker woodpecker
+$ sudo usermod -aG docker woodpecker
 ```
 
 #### Binaries
@@ -209,7 +210,8 @@ $ sudo systemctl restart nginx
 Install `docker` if you don't have it installed already.
 
 ```
-sudo apt-get install docker docker-compose
+$ sudo apt-get install docker docker-compose
+$ sudo docker login
 ```
 
 Generate a secret using `openssl rand -hex 32` and copy that generated secret into `/etc/woodpecker.conf` as shown below.
@@ -284,3 +286,4 @@ $ sudo systemctl status woodpecker-agent
 Mar 27 15:41:01 git systemd[1]: Started Woodpecker.
 ```
 
+The Woodpecker CI should be up and running
