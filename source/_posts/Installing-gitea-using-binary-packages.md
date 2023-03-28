@@ -286,4 +286,13 @@ $ sudo systemctl status woodpecker-agent
 Mar 27 15:41:01 git systemd[1]: Started Woodpecker.
 ```
 
-The Woodpecker CI should be up and running
+The Woodpecker CI should be up and running. So, now enable the services so that they start automatically when the machine is restarted.
+
+```
+$ sudo systemctl enable docker
+$ sudo systemctl enable postgresql
+$ sudo systemctl enable gitea
+$ sudo systemctl enable woodpecker
+$ sudo systemctl enable woodpecker-agent
+$ sudo systemctl enable nginx
+```
