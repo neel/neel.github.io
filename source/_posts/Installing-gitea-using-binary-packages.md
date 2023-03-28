@@ -296,3 +296,11 @@ $ sudo systemctl enable woodpecker
 $ sudo systemctl enable woodpecker-agent
 $ sudo systemctl enable nginx
 ```
+
+Install certbot add `https`
+
+```
+$ sudo apt-get install certbot python3-certbot-nginx
+$ sudo certbot --nginx
+$ sudo systemctl restart nginx
+```
