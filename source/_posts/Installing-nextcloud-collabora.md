@@ -2,7 +2,7 @@ title: Installing Nextcloud and Collabora
 author: Neel Basu (Sunanda Bose)
 tags: []
 categories: []
-date: 2023-03-26 17:53:00
+date: 2023-03-31 01:25:00
 ---
 
 # Install Nextcloud
