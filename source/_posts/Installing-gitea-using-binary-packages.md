@@ -1,4 +1,4 @@
-title: Installing gitea and woodpecker using binary packages (WIP)
+title: Installing gitea and woodpecker using binary packages
 author: Neel Basu (Sunanda Bose)
 tags: []
 categories: []
