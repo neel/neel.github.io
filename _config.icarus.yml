@@ -258,9 +258,9 @@ widgets:
             GitLab:
                 icon: fab fa-gitlab
                 url: 'https://gitlab.com/neel.basu'
-            Facebook:
-                icon: fab fa-facebook
-                url: 'https://facebook.com/basu.neel'
+            # Facebook:
+            #     icon: fab fa-facebook
+            #     url: 'https://facebook.com/basu.neel'
             RSS:
                 icon: fas fa-rss
                 url: /atom.xml
