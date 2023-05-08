@@ -228,7 +228,7 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: Neel Basu (Sunanda Bose)
+        author: Sunanda Bose
         # Author title
         author_title: Senior Research Fellow, Department of Computer Science and Engineering, Jadavpur University
         # Author's current location
