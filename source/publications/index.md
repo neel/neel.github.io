@@ -8,6 +8,16 @@ ___
 
 ## Highlighted Publications
 
+> <svg width="10" height="10"> <rect width="10" height="10" style="fill:rgb(191,68,68);" /> </svg> [Scheduling Periodic Sensors for Instantaneous Aggregated Traffic Minimization](https://link.springer.com/article/10.1007/s11276-024-03722-4)
+Sunanda Bose, Akash Chowdhury, Nandini Mukherjee 
+*Wireless Networks* 
+Springer 2024
+
+> <svg width="10" height="10"> <rect width="10" height="10" style="fill:rgb(191,68,68);" /> </svg> [Traversable Ledger for Responsible Data Sharing and Access Control in Health Research. Information](https://doi.org/10.3390/info15120815)
+Sunanda Bose, Dusica Marijan
+*Information* 
+MDPI 2024
+
 > <svg width="10" height="10"> <rect width="10" height="10" style="fill:rgb(191,68,68);" /> </svg> [Predicting Spatio-Temporal Phenomena of Mobile Resources in Sensor Cloud Infrastructure](http://dx.doi.org/10.1145/3446936)
 Sunanda Bose, Sumit Kumar Paul, Nandini Mukherjee
 *ACM Transactions on Spatial Algorithms and Systems* 
@@ -39,6 +49,22 @@ Sunanda Bose, Nandini Mukherjee
 Innsbruck, Austria, IEEE 2016
 
 ## All Publications
+
+
+> <svg width="10" height="10"> <rect width="10" height="10" style="fill:rgb(191,68,68);" /> </svg> [Traversable Ledger for Responsible Data Sharing and Access Control in Health Research. Information](https://doi.org/10.3390/info15120815)
+Sunanda Bose, Dusica Marijan
+*Information* 
+MDPI 2024
+
+> <svg width="10" height="10"> <rect width="10" height="10" style="fill:rgb(191,68,68);" /> </svg> [Scheduling Periodic Sensors for Instantaneous Aggregated Traffic Minimization](https://link.springer.com/article/10.1007/s11276-024-03722-4)
+Sunanda Bose, Akash Chowdhury, Nandini Mukherjee 
+*Wireless Networks* 
+Springer 2024
+
+> <svg width="10" height="10"> <rect width="10" height="10" style="fill:rgb(1,153,255);" /> </svg>  [Secure Traversable Event logging for Responsible Identification of Vertically Partitioned Health Data](https://ieeexplore.ieee.org/abstract/document/10538677)
+Sunanda Bose, Akash Chowdhury, Nandini Mukherjee
+*IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)* 
+Exeter, United Kingdom, IEEE 2023
 
 > <svg width="10" height="10"> <rect width="10" height="10" style="fill:rgb(191,68,68);" /> </svg> [Predicting Spatio-Temporal Phenomena of Mobile Resources in Sensor Cloud Infrastructure](http://dx.doi.org/10.1145/3446936)
 Sunanda Bose, Sumit Kumar Paul, Nandini Mukherjee
