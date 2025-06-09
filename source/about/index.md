@@ -1,5 +1,5 @@
 ---
-title: Sunanda Bose (a.k.a. Neel Basu)
+title: Sunanda Bose 
 date: 2020-12-27 02:22:10
 ---
 
